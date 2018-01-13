@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'BebasNeue Bold';
+    src: url('BebasNeue Bold.otf');
+}
+
+.block1cal /*bloc pour le pentagone*/
+{
+	
+	position:relative;
+
+	display:inline-block;
+	
+	margin:0;
+	padding:0;
+	
+	font-size: 0;
+	
+	border-right: 232px solid #686868; /* longueur du pentagone */
+	border-bottom: 40px solid #686868; /* hauteur du pentagone*/
+	 
+	
+	
+	box-shadow: 0px 5px 0px #b7812c; /* pour combler l'espace blanc horizontal due au inline-block */
+
+}
+
+.corner
+{
+	
+	display:block;
+	
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid #686868; /* coté à droite de la diagonale */
+	border-left: 20px solid transparent; /* coté en dessous de la diagonale  */
+	
+	float:left;
+}
+
+
+
+
+
+
+.block2 /* bloc pour la queue*/
+{
+	
+	margin-top:0px;
+	
+    position:relative;
+
+    display:block;
+	
+	width: 70px;
+	height: 70px;
+	
+	float:right;
+	
+}
+
+
+
+.diag /* triangle gris de la queue */
+{
+	
+	position:relative;
+	top:0px;
+	left:0px;
+	
+	
+	width: 0;
+	height: 0;
+	border-top: 18px solid #535557; /*coté à gauche de la diagonal*/
+	border-right: 18px solid transparent; /*coté en haut de la diagonal*/
+	
+	
+
+
+	
+
+
+	
+}
+
+.diag2 /* bordure jaune du triangle gris de la queue */
+{
+	
+	position:relative;
+	top:0px;
+	left:0px;
+	
+	
+	width: 0;
+	height: 0;
+	border-top: 24px solid #986b25; /* coté à gauche de la diagonal */
+	border-right: 24px solid transparent; /* coté en haut de la diagonal */
+	
+	float:left;
+	
+	
+	
+}
+
+
+
+
+.block4 /* bloc pour la bordure en dessous du pentagone */
+{
+	
+    position:relative;
+
+    display:inline-block;
+	border-bottom: 2px solid #b7812c; /* épaisseur et couleur de la bordure en dessous du pentagone */
+
+
+}
+
+.block5 /* bloc regroupant tout les éléments */
+{
+	
+    position:relative;
+	top: 30px;
+	left:55px;
+	
+	width: 298px;
+	
+    display:inline-block;
+
+}
+
+.block6 /* bloc du texte */
+
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+	
+	margin:0;
+	
+	
+	
+	color:white;
+	
+}
+
+
+.txtcal{
+width:250px;
+height:35px;
+line-height:32px;  /*centrage vertical */
+text-align:center; /* centrage horizontal */
+
+font-size:1.5em;
+font-family: 'BebasNeue Bold';
+
+margin:0px;
+letter-spacing: 1px;
+}
